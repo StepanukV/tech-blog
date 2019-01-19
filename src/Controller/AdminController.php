@@ -19,7 +19,7 @@ class AdminController extends AbstractController
     private $authorRepository;
 
     /** @var \Doctrine\Common\Persistence\ObjectRepository */
-    private $PostRepository;
+    private $postRepository;
 
     /**
      * @param EntityManagerInterface $entityManager
@@ -29,7 +29,7 @@ class AdminController extends AbstractController
     public function __construct(EntityManagerInterface $entityManager)
     {
         $this->entityManager = $entityManager;
-        $this->PostRepository = $entityManager->getRepository('App:Post');
+        $this->postRepository = $entityManager->getRepository('App:Post');
         $this->authorRepository = $entityManager->getRepository('App:Author');
     }
     /**
