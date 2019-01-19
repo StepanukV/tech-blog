@@ -35,14 +35,7 @@ class Author
     /**
      * @var string
      *
-     * @ORM\Column(name="username", type="string", length=255, unique=true)
-     */
-    private $username;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="company", type="string", length=255)
+     * @ORM\Column(name="phone", type="string", length=255, nullable=true)
      */
     private $phone;
 
@@ -117,30 +110,6 @@ class Author
     public function getTitle()
     {
         return $this->title;
-    }
-
-    /**
-     * Set username
-     *
-     * @param string $username
-     *
-     * @return Author
-     */
-    public function setUsername($username)
-    {
-        $this->username = $username;
-
-        return $this;
-    }
-
-    /**
-     * Get username
-     *
-     * @return string
-     */
-    public function getUsername()
-    {
-        return $this->username;
     }
 
     /**

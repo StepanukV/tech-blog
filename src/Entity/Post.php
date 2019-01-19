@@ -5,9 +5,9 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * BlogPost
+ * Post
  *
- * @ORM\Table(name="blog_post")
+ * @ORM\Table(name="post")
  * @ORM\Entity(repositoryClass="App\Repository\PostRepository")
  * @ORM\HasLifecycleCallbacks
  */
