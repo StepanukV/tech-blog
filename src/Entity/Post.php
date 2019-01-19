@@ -273,5 +273,4 @@ class Post
             $this->setUpdatedAt(new \DateTime());
         }
     }
-
 }
